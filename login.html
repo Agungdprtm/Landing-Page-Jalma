@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gramedia Jalma — Melawai</title>
+  <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 770px)">
+  <link rel="stylesheet" href="dekstop.css" media="screen and (min-width: 775px)">
+
+  
+  <script type="text/javascript" src="/md5.js"></script>
+  <script type="text/javascript">
+    function doLogin() {
+      
+      document.sendin.username.value = document.getElementById("username").value;
+      document.sendin.password.value = hexMD5('$(chap-id)' + document.getElementById("password").value + '$(chap-challenge)');
+      document.sendin.submit();
+      return false;
+    }
+  </script>
+</head>
+
+<body>
+  <div class="frame">
+    <header>
+      <h1>Gramedia Jalma - Melawai</h1>
+    </header>
+
+    <div class="container">
+      <div class="left">
+        <div class="welcome-box">
+          <h2>Halo, Kawan Jalma!</h2>
+        </div>
+
+        <div class="description">
+          <p>Terima kasih telah ber-#JumpaDiJalma! Kamu bisa mendapatkan akses internet gratis di Gramedia Jalma dengan memasukkan kode password yang didapatkan dari nota transaksi.</p>
+          <p>Akses internet gratis Gramedia Jalma bisa kamu gunakan selama 2 (dua) jam.</p>
+        </div>
+
+        <div class="login-box">
+          <h3>WiFi Login</h3>
+          <form name="login" action="$(link-login-only)" method="post"
+            $(if chap-id) onsubmit="return doLogin()" $(endif)>
+            <input type="hidden" name="dst" value="$(link-orig)">
+            <input type="hidden" name="popup" value="true">
+
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username">
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password">
+
+            <button type="submit">Login</button>
+          </form>
+
+          <form name="sendin" action="$(link-login-only)" method="post">
+            <input type="hidden" name="username">
+            <input type="hidden" name="password">
+            <input type="hidden" name="dst" value="$(link-orig)">
+            <input type="hidden" name="popup" value="true">
+          </form>
+
+          <p>Akses WiFi bisa didapatkan dengan melakukan pembelian di Gramedia Jalma.</p>
+        </div>
+      </div>
+
+      <div class="right">
+        <h3>Lokasi</h3>
+        <p>Jl. Melawai 3 No.12 - 18, RT.3/RW.1, Melawai Kec. Kebayoran Baru, Kota Jakarta Selatan.</p>
+
+        <div class="footer">
+          <h3>Follow Us</h3>
+          <div class="footer-row">
+            <div class="footer-item">
+              <img src="ig.jpg" alt="Instagram">
+              <span>@gramedia.jalma</span>
+            </div>
+            <div class="footer-item">
+              <img src="telepon.png" alt="Telepon">
+              <span>+62 xxx xxx xxxx</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script type="text/javascript">
+    document.getElementById("username").focus();
+  </script>
+</body>
+</html>

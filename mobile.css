@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+@font-face {
+  font-family: 'Karrik';
+  src: url('FONT/Karrik-Regular.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Literata-Regular';
+  src: url('FONT/Literata-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Literata-Bold';
+  src: url('FONT/Literata-Bold.ttf') format('truetype');
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  background: #fdfcf7;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+body {
+  font-family: 'Literata-Regular', sans-serif;
+  background: url('mobile/Background\ Canvas\ Mobile_01.png') center center / cover no-repeat;
+  color: #000;
+  line-height: 1.6;
+}
+
+
+.frame {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  overflow-x: hidden;
+  position: relative;
+  background: transparent;
+}
+
+
+
+header {
+  background: url('mobile/Header\ Mobile_01.png') center center / cover no-repeat;
+  background-size: 100% 100%;
+  color: #F2EDDF;
+  text-align: center;
+  width: 100%;
+  max-width: 100vw;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+header h1 {
+  font-family: 'Literata-Bold', sans-serif;
+  font-size: 14px;
+  color: #F2EDDF;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.welcome-box {
+  background: url('mobile/Hero\ Image\ Mobile_01.2.png') center center / cover no-repeat;
+  background-size: 100% 100%;
+  width: 330px;
+  height: 120px;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+.welcome-box h2 {
+    font-family: 'Literata-Bold', sans-serif;
+  font-size: 0;
+  font-weight: normal;
+}
+
+.welcome-box h2::before {
+  content: 'Halo,';
+  font-family: 'Literata-Bold', sans-serif;
+  font-size: 18px;
+  width: 300px;
+  padding-left: 20px;
+  color: #F2EDDF;
+  display: block;
+  text-align: left;
+}
+
+
+.welcome-box h2::after {
+  content: 'Kawan Jalma!';
+  font-family: 'Literata-Bold', sans-serif;
+  font-size: 18px;
+  width: 300px;
+  padding-left: 20px;
+  color: #F2EDDF;
+  display: block;
+  text-align: left;
+}
+
+.description {
+  font-family: 'Literata-Regular', sans-serif;
+  width: 300px;
+  font-size: 13px;
+  text-align: left;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+
+.login-box {
+  background: #ddd url('mobile/Wifi\ Input\ BG\ Mobile_01.png') center center / cover no-repeat;
+  background-size: 100% 100%;
+  border-radius: 12px;
+  text-align: center;
+  width: 330px;
+  height: 340px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px 20px 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.login-box h3 {
+  font-family: 'Literata-Bold', sans-serif;
+  color: #F2EDDF;
+  width: 300px;
+  height: 20px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  font-size: 18px;
+  text-align: left;
+}
+
+.login-box label {
+  font-family: 'Karrik', sans-serif;
+  display: block;
+  color: #F2EDDF;
+  width: 280px;
+  height: 18px;
+  padding-left: 10px;
+  font-size: 14px;
+  font-weight: normal;
+  text-align: left;
+  margin-bottom: 6px;
+}
+
+.login-box input {
+  font-family: 'Karrik', sans-serif;
+  width: 280px !important;
+  height: 35px !important;
+  border: 1px solid #000;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  padding: 6px 10px;
+  font-size: 13px;
+}
+
+.login-box button {
+  font-family: 'Literata-Bold', sans-serif;
+  width: 100px;
+  height: 36px;
+  background: #7D5026;
+  border: none;
+  border-radius: 18px;
+  font-size: 14px;
+  color: #F2EDDF;
+  margin-top: 10px;
+}
+
+.login-box p {
+  font-family: 'Literata-Regular', sans-serif;
+  width: 300px;
+  color: #F2EDDF;
+  margin-top: 10px;
+  text-align: left;
+  font-size: 12px;
+  padding-left: 10px;
+}
+
+
+.right {
+  width: 320px;
+  text-align: left;
+}
+.right > h3 {
+  font-family: 'Literata-Bold', sans-serif;
+  font-size: 16px;
+  margin-bottom: 8px;
+  padding-left: 10px;
+  border-bottom: 3px solid #000;
+  padding-bottom: 3px;
+}
+.right > p {
+    font-family: 'Literata-Regular', sans-serif;
+    padding-left: 10px;
+}
+
+.footer {
+  margin-top: 16px;
+}
+
+.footer h3 {
+  font-family: 'Literata-Bold', sans-serif;
+  font-size: 16px;
+  margin-bottom: 8px;
+  padding-left: 10px;
+  border-bottom: 3px solid #000;
+  padding-bottom: 3px;
+}
+
+.footer-row {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.footer-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+.footer-item span {
+    font-family: 'Literata-Regular', sans-serif;
+    padding-left: 10px;
+}
+
+.footer-item img {
+  width: 30px;
+  height: 30px;
+  padding-left: 10px;
+  object-fit: contain;
+}
+

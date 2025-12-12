@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+@font-face {
+  font-family: 'Karrik';
+  src: url('FONT/Karrik-Regular.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Literata-Regular';
+  src: url('FONT/Literata-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Literata-Bold';
+  src: url('FONT/Literata-Bold.ttf') format('truetype');
+}
+
+body {
+  font-family: 'Literata-Regular', sans-serif;
+  background: #fdfcf7 url(Dekstop/Background\ Canvas\ Desktop.png) center center / cover no-repeat;
+  color: #000;
+  line-height: 1.6;
+}
+
+header {
+  background: #7D5026 url('Dekstop/Header\ Desktop.png') center center / cover no-repeat;
+  color: #F2EDDF;
+  text-align: center;
+  width: 100%;
+  height: 70px; /*sebelumnya 90px*/
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+header h1 {
+  font-family: 'Literata-Bold', sans-serif;
+  font-size: 20px;
+  color: #F2EDDF;
+}
+
+
+.container {
+  width: 1100px;
+  margin: 0 auto;
+  padding-top: 100px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+}
+
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+
+.welcome-box {
+  background: #ddd url(Dekstop/Hero\ Image\ Desktop.2.png) center center / cover no-repeat;
+  background-size: 100% 100%;
+  width: 700px;
+  height: 160px;
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+.welcome-box h2 {
+  font-family: 'Literata-Bold', sans-serif;
+  font-size: 31px;
+  color: #F2EDDF;
+  padding-left: 40px;
+  font-weight: normal;
+  text-align: left;
+}
+
+.description {
+  width: 680px;
+  font-size: 15px;
+  text-align: left;
+  margin-top: 10px;
+  line-height: 1.5;
+  font-family: 'Literata-Regular', sans-serif;
+}
+
+.login-box {
+  background: #ddd url(Dekstop/image_1765427329689434.png);
+  border-radius: 12px;
+  color: #F2EDDF;
+  text-align: center;
+  width: 700px;
+  height: 320px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  padding: 10px 20px 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.login-box h3 {
+  font-family: 'Literata-Bold', sans-serif;
+  width: 600px;
+  height: 24px;
+  margin-bottom: 20px;
+  padding-left: 40px;
+  font-size: 20px;
+  text-align: left;
+}
+
+.login-box label {
+  font-family: 'Karrik', sans-serif;
+  display: block;
+  width: 600px;
+  height: 18px;
+  font-size: 14px;
+  font-weight: normal;
+  text-align: left;
+  margin-bottom: 3px;
+  padding-left: 40px;
+}
+
+.login-box input {
+  font-family: 'Karrik', sans-serif;
+  width: 600px;
+  height: 35px;
+  padding: 8px 12px;
+  margin-bottom: 8px;
+  border: 1px solid #1c1919;
+  border-radius: 8px;
+  background: white;
+  font-size: 14px;
+}
+
+
+.login-box button {
+  font-family: 'Literata-Bold', sans-serif;
+  width: 150px;
+  height: 38px;
+  margin-top: 8px;
+  background: #7D5026;
+  border: none;
+  border-radius: 20px;
+  font-size: 15px;
+  cursor: pointer;
+  color: #F2EDDF;
+}
+
+.login-box p {
+  font-family: 'Literata-Regular', sans-serif;
+  width: 600px;
+  font-size: 12px;
+  margin-top: 12px;
+  padding-left: 30px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+.right {
+  text-align: left;
+}
+.right > h3 {
+  font-family: 'Literata-Bold', sans-serif;
+  font-size: 18px;
+  margin-bottom: 8px;
+  padding-left: 10px;
+  border-bottom: 3px solid #000;
+  padding-bottom: 3px;
+}
+.right > p { 
+  font-family: 'Literata-Regular', sans-serif;
+  width: 300px;
+  padding-left: 5px;  
+}
+
+.footer {
+  margin-top: 16px;
+  text-align: left;
+}
+
+.footer h3 {
+  font-family: 'Literata-Bold', sans-serif;
+  font-size: 18px;
+  margin-bottom: 8px;
+  padding-left: 10px;
+  border-bottom: 3px solid #000;
+  padding-bottom: 3px;
+}
+
+.footer-row {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.footer-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+  font-size: 15px;
+  text-align: left;
+}
+.footer-item span { 
+    font-family: 'Literata-Regular', sans-serif;
+    padding-left: 5px;
+}
+
+.footer-item img {
+  width: 25px;
+  height: 25px;
+  padding-left: 5px;
+  object-fit: contain;
+  display: block;
+}
