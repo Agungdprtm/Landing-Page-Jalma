@@ -120,6 +120,7 @@ header h1 {
   padding-left: 40px;
   font-size: 20px;
   text-align: left;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .login-box label {
@@ -132,6 +133,7 @@ header h1 {
   text-align: left;
   margin-bottom: 3px;
   padding-left: 40px;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .login-box input {
@@ -169,6 +171,7 @@ header h1 {
   display: flex;
   align-items: flex-end;
   justify-content: flex-start;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .right {
@@ -231,4 +234,5 @@ header h1 {
   object-fit: contain;
   display: block;
 }
+
 
