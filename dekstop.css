@@ -70,7 +70,7 @@ header h1 {
   background: #ddd url(Dekstop/Hero\ Image\ Desktop.2.png) center center / cover no-repeat;
   background-size: 100% 100%;
   width: 700px;
-  height: 160px;
+  height: 320px;
   padding: 20px;
   border-radius: 12px;
   display: flex;
@@ -231,3 +231,4 @@ header h1 {
   object-fit: contain;
   display: block;
 }
+
