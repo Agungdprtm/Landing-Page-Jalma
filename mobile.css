@@ -161,6 +161,7 @@ header h1 {
   padding-left: 10px;
   font-size: 18px;
   text-align: left;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .login-box label {
@@ -174,6 +175,7 @@ header h1 {
   font-weight: normal;
   text-align: left;
   margin-bottom: 6px;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .login-box input {
@@ -207,6 +209,7 @@ header h1 {
   text-align: left;
   font-size: 12px;
   padding-left: 10px;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 
@@ -265,4 +268,5 @@ header h1 {
   padding-left: 10px;
   object-fit: contain;
 }
+
 
